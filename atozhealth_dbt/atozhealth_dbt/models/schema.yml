@@ -1,0 +1,58 @@
+version: 2
+
+models:
+
+  - name: patient_summary
+    columns:
+      - name: patient_id
+        tests: [not_null, unique]
+
+  - name: department_summary
+    columns:
+      - name: department
+        tests: [not_null]
+
+  - name: provider_summary
+    columns:
+      - name: provider_id
+        tests: [not_null]
+
+  - name: bed_utilization_summary
+    columns:
+      - name: bed_id
+        tests: [not_null]
+
+  - name: lab_summary
+    columns:
+      - name: test_name
+        tests: [not_null]
+
+  - name: pharmacy_summary
+    columns:
+      - name: medication_name
+        tests: [not_null]
+
+  - name: radiology_summary
+    columns:
+      - name: imaging_type
+        tests: [not_null]
+
+  - name: rehab_summary
+    columns:
+      - name: therapy_type
+        tests: [not_null]
+
+  - name: hospital_kpi_summary
+    columns:
+      - name: total_admissions
+        tests: [not_null]
+
+  - name: patient_care_journey_summary
+    columns:
+      - name: patient_id
+        tests: [not_null]
+
+  - name: department_operational_kpi_summary
+    columns:
+      - name: department
+        tests: [not_null]

@@ -1,0 +1,175 @@
+[0m13:17:18.161404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295BD9C7450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295BE8E76D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295BE88FC90>]}
+
+
+============================== 13:17:18.167656 | ba05008d-295d-4581-8668-957ca027a539 ==============================
+[0m13:17:18.167656 [info ] [MainThread]: Running with dbt=1.11.7
+[0m13:17:18.168927 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\betha\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init atozhealth_dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:17:18.206946 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\betha\.dbt
+[0m13:17:18.219858 [debug] [MainThread]: Starter project path: C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m13:17:18.247216 [info ] [MainThread]: 
+Your new dbt project "atozhealth_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:17:18.247216 [info ] [MainThread]: Setting up your profile.
+[0m13:17:54.483587 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:17:54.483587 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:17:54.483587 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:28:13.984537 [error] [MainThread]: Encountered an error:
+
+[0m13:28:14.065106 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:28:14.080127 [debug] [MainThread]: Command `dbt init` failed at 13:28:14.080127 after 656.03 seconds
+[0m13:28:14.082126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295BF8F1C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295BF8F1790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000295D09729D0>]}
+[0m13:28:14.084127 [debug] [MainThread]: Flushing usage events
+[0m13:28:14.801880 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:29:03.379618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DEDA6590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DED21B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DED20190>]}
+
+
+============================== 13:29:03.379618 | 7b01b767-432e-42ec-9267-a508a02de580 ==============================
+[0m13:29:03.379618 [info ] [MainThread]: Running with dbt=1.11.7
+[0m13:29:03.379618 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\betha\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init atozhealth_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:29:03.420679 [debug] [MainThread]: Starter project path: C:\Users\betha\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m13:29:03.448851 [info ] [MainThread]: 
+Your new dbt project "atozhealth_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:29:03.449854 [info ] [MainThread]: Setting up your profile.
+[0m13:29:08.837424 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:29:08.837424 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:29:08.838460 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:32:13.468126 [info ] [MainThread]: Profile atozhealth_dbt written to C:\Users\betha\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:32:13.472166 [debug] [MainThread]: Command `dbt init` succeeded at 13:32:13.472166 after 190.20 seconds
+[0m13:32:13.475136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DED22AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213D8227690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213D81AAE10>]}
+[0m13:32:13.477138 [debug] [MainThread]: Flushing usage events
+[0m13:32:14.124620 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:33:07.287982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190970E9B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019096E456D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190970A2AD0>]}
+
+
+============================== 13:33:07.287982 | 73ccadcb-b5df-4560-aff3-720aabbbcb0c ==============================
+[0m13:33:07.287982 [info ] [MainThread]: Running with dbt=1.11.7
+[0m13:33:07.287982 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\betha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:33:07.321034 [info ] [MainThread]: dbt version: 1.11.7
+[0m13:33:07.322034 [info ] [MainThread]: python version: 3.11.9
+[0m13:33:07.323007 [info ] [MainThread]: python path: C:\Users\betha\AppData\Local\Programs\Python\Python311\python.exe
+[0m13:33:07.324011 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m13:33:08.420108 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m13:33:08.420108 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m13:33:08.421104 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m13:33:08.505720 [info ] [MainThread]: Using profiles dir at C:\Users\betha\.dbt
+[0m13:33:08.506729 [info ] [MainThread]: Using profiles.yml file at C:\Users\betha\.dbt\profiles.yml
+[0m13:33:08.507772 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\betha\Documents\projects\HealthcareDataPlatform\atozhealth_dbt\dbt_project.yml
+[0m13:33:08.508776 [info ] [MainThread]: adapter type: snowflake
+[0m13:33:08.509794 [info ] [MainThread]: adapter version: 1.11.3
+[0m13:33:08.510774 [info ] [MainThread]: Configuration:
+[0m13:33:08.515623 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:33:08.520086 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:33:08.523136 [info ] [MainThread]: Required dependencies:
+[0m13:33:08.525115 [debug] [MainThread]: Executing "git --help"
+[0m13:33:08.566879 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:33:08.566879 [debug] [MainThread]: STDERR: "b''"
+[0m13:33:08.566879 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:33:08.566879 [info ] [MainThread]: Connection:
+[0m13:33:08.566879 [info ] [MainThread]:   account: kyc60413.us-east-1
+[0m13:33:08.566879 [info ] [MainThread]:   user: datawhiz1akb
+[0m13:33:08.566879 [info ] [MainThread]:   database: atozhealth_db
+[0m13:33:08.566879 [info ] [MainThread]:   warehouse: atozhealth_wh
+[0m13:33:08.566879 [info ] [MainThread]:   role: dev
+[0m13:33:08.566879 [info ] [MainThread]:   schema: DBT_GOLD_DEV
+[0m13:33:08.566879 [info ] [MainThread]:   authenticator: None
+[0m13:33:08.566879 [info ] [MainThread]:   oauth_client_id: None
+[0m13:33:08.577122 [info ] [MainThread]:   query_tag: None
+[0m13:33:08.578135 [info ] [MainThread]:   client_session_keep_alive: False
+[0m13:33:08.579134 [info ] [MainThread]:   host: None
+[0m13:33:08.579134 [info ] [MainThread]:   port: None
+[0m13:33:08.580130 [info ] [MainThread]:   proxy_host: None
+[0m13:33:08.581135 [info ] [MainThread]:   proxy_port: None
+[0m13:33:08.582131 [info ] [MainThread]:   protocol: None
+[0m13:33:08.583132 [info ] [MainThread]:   connect_retries: 1
+[0m13:33:08.584131 [info ] [MainThread]:   connect_timeout: None
+[0m13:33:08.585133 [info ] [MainThread]:   retry_on_database_errors: False
+[0m13:33:08.586133 [info ] [MainThread]:   retry_all: False
+[0m13:33:08.587132 [info ] [MainThread]:   insecure_mode: False
+[0m13:33:08.588130 [info ] [MainThread]:   reuse_connections: True
+[0m13:33:08.588681 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m13:33:08.588681 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m13:33:08.588681 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m13:33:09.185397 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:33:12.175860 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:33:12.177866 [debug] [MainThread]: On debug: select 1 as id
+[0m13:33:12.177866 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:33:13.730330 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m13:33:13.732227 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m13:33:13.734909 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:33:13.736947 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:33:13.739515 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\betha\Documents\projects\HealthcareDataPlatform\atozhealth_dbt\dbt_project.yml> not found
+
+[0m13:33:13.740796 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: kyc60413.us-east-1.snowflakecomputing.com:443. Role 'DEV' specified in the connect string does not exist or not authorized. Contact your local system administrator, or attempt to login with another role, e.g. PUBLIC.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:33:13.743806 [debug] [MainThread]: Command `dbt debug` failed at 13:33:13.743806 after 6.59 seconds
+[0m13:33:13.745794 [debug] [MainThread]: Connection 'debug' was left open.
+[0m13:33:13.745794 [debug] [MainThread]: On debug: No close available on handle
+[0m13:33:13.746835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190905976D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190970AD110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190970A3750>]}
+[0m13:33:13.748322 [debug] [MainThread]: Flushing usage events
+[0m13:33:14.271604 [debug] [MainThread]: An error was encountered while trying to flush usage events
