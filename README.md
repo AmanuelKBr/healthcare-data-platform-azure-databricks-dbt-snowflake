@@ -49,5 +49,9 @@ Business-level aggregated models:
 ## Project Status
 Production-ready architecture with monitoring and alerting enabled.
 
+## Data Lineage (dbt)
+
+![dbt lineage](assets/dbt-lineage.png)
+
 ## Author
 Amanuel Kebede
