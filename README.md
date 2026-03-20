@@ -53,5 +53,13 @@ Production-ready architecture with monitoring and alerting enabled.
 
 ![dbt lineage](assets/dbt-lineage.png)
 
+## Orchestration (ADF)
+
+![ADF pipeline](assets/adf-pipeline.png)
+
+## Data Warehouse (Snowflake)
+
+![Snowflake tables](assets/snowflake-tables.png)
+
 ## Author
 Amanuel Kebede
