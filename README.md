@@ -233,6 +233,10 @@ Data & Analytics | Power BI | Modern Data Platforms
 
 ![dbt lineage](assets/dbt-lineage.png)
 
+## Dashboard Preview
+
+![Healthcare Operations Dashboard](assets/Dashboard.png)
+
 ## Orchestration (ADF)
 
 ![ADF pipeline](assets/adf-pipeline.png)
