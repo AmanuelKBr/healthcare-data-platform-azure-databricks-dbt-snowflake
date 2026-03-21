@@ -21,7 +21,7 @@ The platform ingests, transforms, models, and serves healthcare data across mult
 | Data Warehouse             | Snowflake                |
 | Transformation Layer       | dbt (Cloud + Core)       |
 | Version Control            | GitHub                   |
-| Visualization (Next Phase) | Power BI                 |
+| Visualization              | Power BI                 |
 
 ---
 
@@ -221,29 +221,17 @@ healthcare-data-platform-azure-databricks-dbt-snowflake/
 
 ---
 
-## Author
-
-**Amanuel Kebede**
-Data & Analytics | Power BI | Modern Data Platforms
-
 ---
-
-
-## Data Lineage (dbt)
-
-![dbt lineage](assets/dbt-lineage.png)
-
-## Dashboard Preview
-
-![Healthcare Operations Dashboard](assets/Dashboard.png)
-
-## Orchestration (ADF)
-
-![ADF pipeline](assets/adf-pipeline.png)
 
 ## Data Warehouse (Snowflake)
 
 ![Snowflake tables](assets/snowflake-tables.png)
 
+
+## Dashboard Preview
+
+![Healthcare Operations Dashboard](assets/Dashboard.png)
+
+
 ## Author
-Amanuel Kebede
+Amanuel Birri
